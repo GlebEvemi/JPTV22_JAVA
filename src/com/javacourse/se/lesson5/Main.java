@@ -6,11 +6,17 @@ import Lesson12.LoopControl;
 import Lesson9.Operation;
 import Lesson13.ForLoop;
 import Lesson14.MyArrays;
+import September14.App;
+import September14.App1;
 
 public class Main {
     public static void main(String[] args) {
-        ForLoop co = new ForLoop();
-        co.foo();
+        App1 app = new App1();
+        //app.active = true;
+        //app.setActive(true);
+        //System.out.println("app.toString = " + app.toString());
+
+        app.run();
 
 
 
