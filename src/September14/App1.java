@@ -1,14 +1,17 @@
 package September14;
+
 import java.util.Scanner;
 
 public class App1 {
     private final Scanner scanner;
     private boolean repeat = true;
-    public App1(){
+
+    public App1() {
         scanner = new Scanner(System.in);
 
     }
-    public void run(){
+
+    public void run() {
         do {
             System.out.println("Выберите щадачу из списка");
             System.out.println("0. Выйти из программы");
@@ -21,6 +24,7 @@ public class App1 {
                 case 0:
                     System.out.println("Вы выбрали выход из программы");
                     repeat = false;
+                    System.out.println("Hello world!");
                     break;
                 case 1:
                     System.out.println("Вы выбрали работу со строками");
@@ -32,6 +36,7 @@ public class App1 {
                     break;
                 default:
                     System.out.println("You are stupid");
-            }}while(repeat);
-        }
+            }
+        } while (repeat);
     }
+}
